@@ -4,3 +4,5 @@ __pycache__/
 db.sqlite3
 .env
 mandarina_db
+mandarina_db/
+*.db
