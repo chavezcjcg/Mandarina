@@ -288,7 +288,7 @@ class MovimientoInventario(models.Model):
             raise ValidationError("No hay suficientes existencias en stock para realizar esta operación.")
 
     def save(self, *args, **kwargs):
-        self.full_clean()  # Llamar a clean() antes de guardar
+        self.full_clean()  
         neto = self.cantidad_a_agregar - self.cantidad_a_quitar
         self.insumo.stock_actual += neto
         self.insumo.save()
