@@ -6,3 +6,4 @@ db.sqlite3
 mandarina_db
 mandarina_db/
 *.db
+cerebro/settings.py
