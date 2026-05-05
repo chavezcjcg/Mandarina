@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from gestion.views import cerrar_comanda
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cerrar-pedido/<int:comanda_id>/', cerrar_comanda, name='cerrar_comanda'),
 ]
